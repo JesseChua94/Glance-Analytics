@@ -4,6 +4,11 @@ body {
     font-family: sans-serif;
 }
 
+#tabs nav a {
+    text-decoration:none;
+    color: white;
+}
+
 #wrapper {
     margin: 0;
     position: absolute;
@@ -42,8 +47,6 @@ body {
 }
 
 #tabs nav a {
-    text-decoration:none;
-    color: white;
     display: block;
     margin-bottom: 20px;
     background-color: black;
@@ -89,7 +92,9 @@ body {
 
 #overview nav a {
     color: grey;
-    text-decoration: none;
+}
+
+#overview nav li {
     margin: 0;
     display: table-cell;
     border-right: solid 1px #89C4F4;
