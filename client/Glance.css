@@ -52,6 +52,9 @@ body {
     font-size: 14px;
 }
 
+#tabs nav img {
+    vertical-align: middle;
+}
 #content {
     background-color: white;
     width: 83%;
