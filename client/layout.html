@@ -1,37 +1,14 @@
 <template name="layout">
 
 	<div id="wrapper">
-      <div id="toolbar">
-          <div id="date">
-              <h4>Monday, June 1, 2015</h4>
-              <h1> 6:00 PM</h1>
-          </div>
-
-          <div id="tabs">
-            <nav>
-                <a href=""><img src="glance.png" alt="Glance icon">  Glance</a>
-                <a href=""><img src="add.png" alt="add icon"> Add Metric</a>
-                <a href=""><img src="settings.png" alt="settings icon">  Settings</a>
-                <a href=""><img src="help.png" alt="help icon">  Help</a>
-            </nav>
-          </div>
-        </div>
+      {{> yield region="sidebar"}}
 
         <div id="content">
                 <div id="metrics">
                   {{> yield}}
                 </div>
 
-                <div id="overview">
-                    <nav>
-                        
-                        <a href="{{pathFor 'currentRev'}}">Current Revenue</a>
-                        <a href="{{pathFor 'employeeCost'}}">Employee Cost</a>
-                        <a href="{{pathFor 'status'}}">Status</a>
-                        <a href="{{pathFor 'misc'}}">Misc</a>
-                    
-                    </nav>
-                </div>
+                {{> yield region="metrics"}}
 
 
         </div>

@@ -1,5 +1,9 @@
 Router.configure({
-	layoutTemplate:'layout'
+	layoutTemplate:'layout',
+	yieldTemplates: {
+		'metrics': {to: 'metrics'},
+		'sidebar': {to: 'sidebar'}
+	}
 });
 
 Router.map(function(){
@@ -7,5 +11,6 @@ Router.map(function(){
 	this.route('employeeCost', {path:'/employeeCost'});
 	this.route('status', {path:'/status'});
 	this.route('misc', {path:'/misc'});
+	this.route('settings', {path: '/settings', layoutTemplate: 'settings'});
 
 })
