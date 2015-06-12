@@ -9,3 +9,5 @@ autopublish
 insecure
 iron:router
 d3
+mrt:moment
+d3js:d3

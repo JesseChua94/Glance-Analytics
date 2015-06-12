@@ -69,7 +69,6 @@ body {
     }
 
 #metrics {
-
     height: 70%;
 }
 
@@ -104,4 +103,3 @@ body {
 #overview nav :last-child {
     border-right: 0 none;
 }
-    
