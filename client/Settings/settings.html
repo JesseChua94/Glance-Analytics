@@ -1,6 +1,18 @@
-<template name="settings">
 
+<template name="settings">
 	<div id="wrapper">
 	{{> yield region="sidebar"}}
+<h4> Enter opening hour </h4>
+<form class="settings">
+	<input name="endHour" type="text">
+	<input name="startHour" type="text">
+	<input type="submit" class="enter" value="Enter">
+</form>
+
+<button id="delete"> Delete</button>
+<button id="check"> Check</button>
+
+
 </div>
+
 </template>

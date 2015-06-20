@@ -1,0 +1,13 @@
+#start {
+	float: left;
+	margin-left: 400px;
+	margin-top: 200px;
+}
+
+h4 {
+	margin-top: 0;
+}
+
+input {
+	display: block;
+}
